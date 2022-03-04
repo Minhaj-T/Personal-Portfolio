@@ -503,12 +503,13 @@
     <script>
         $("#ajax-contact").submit((e)=>{
             e.preventDefault()
+           alert("Form submitted successfully")
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbyVE4pKJr2I0uiAjWfNU6iWPa0Wq57prLS0C2CuGs4NNGVYbbn2iZ8VqMTWfvLhV_a4og/exec",
                 data:$("#ajax-contact").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
+//                     alert("Form submitted successfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
