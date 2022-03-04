@@ -502,8 +502,8 @@
 
     <script>
         $("#ajax-contact").submit((e)=>{
+          alert("Form submitted successfully")
             e.preventDefault()
-           alert("Form submitted successfully")
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbyVE4pKJr2I0uiAjWfNU6iWPa0Wq57prLS0C2CuGs4NNGVYbbn2iZ8VqMTWfvLhV_a4og/exec",
                 data:$("#ajax-contact").serialize(),
